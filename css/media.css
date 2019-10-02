@@ -1,0 +1,42 @@
+
+@media (max-width: 1200px) {
+    .random-word {
+        font-size: 70px !important;
+    }
+
+    .random-div {
+        min-width: 90vw !important;
+    }
+
+
+    .desc-div label
+    {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 623px) {
+    .random-word {
+        font-size: 50px !important;
+    }
+
+    .random-div {
+        min-width: 90vw !important;
+    }
+
+
+    .desc-div label
+    {
+        font-size: 15px !important;
+    }
+
+    .api-div .block {
+    
+        font-size: 12px;
+    }
+
+
+    .out-div {
+        font-size: 12px;
+    }
+}

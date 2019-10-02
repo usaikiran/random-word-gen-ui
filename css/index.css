@@ -1,0 +1,322 @@
+
+@font-face {
+    font-family: ikaros;
+    src: url(../res/fonts/IkarosRegular.otf);
+}
+
+@font-face {
+    font-family: ikaros-light;
+    src: url(../res/fonts/IkarosLight.otf);
+}
+
+@font-face {
+    font-family: anson;
+    src: url(../res/fonts/AnsonRegular.otf);
+}
+
+
+@font-face
+{
+  font-family: sonorous;
+  src: url( ../res/fonts/Sonorous.otf );
+}
+
+
+body
+{
+    background-color: #252422;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+.root-div
+{
+    display: flex;
+    align-items: center;
+
+    flex-flow: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-div
+{
+    display: flex;
+    padding: 15px 10px;
+
+    align-self: baseline;
+    text-align: center;
+
+    background: #19180a55;
+    border-bottom: 1px solid #0002;
+}
+
+.github 
+{
+    width: 40px;
+    height: 40px;
+
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.github:hover 
+{
+    cursor: pointer;
+}
+
+.header-div h3
+{
+    display: flex;
+
+    color: #F4E9B6CC;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.link
+{
+    text-decoration-line: underline;
+    color: #70EE9C;
+}
+
+.link:hover
+{
+    color: #4F9D69;
+}
+
+.random-div
+{
+    display: inline-flex;
+    flex-flow: column;
+    text-align: center;
+
+    border: 1px solid #FCE3B122;
+    border-radius: 6px;
+    padding: 0px;
+    margin-top: 70px;
+
+}
+
+.random-word
+{  
+    font-size: 100px ;
+    font-weight: lighter;
+
+    color: #FFC857;
+
+    border-bottom: 1px solid #FCE3B122;
+    padding: 20px 45px 10px 45px;
+    margin: 0px !important;
+    text-transform: uppercase;
+}
+
+.random-word::-moz-selection 
+{
+    color: #fff;
+    background: #FFC857;
+
+    border-radius: 10px;
+}
+  
+.random-word::selection 
+{
+    color: #fff; 
+    background: #FFC857;
+
+    border-radius: 10px;
+}
+
+.btn-div 
+{
+    display: flex;
+    justify-content: flex-end;
+
+    float: right;
+    padding: 15px;
+
+    font-weight: bold;
+}
+
+.btn-generate
+{
+    background-color: #F7B32B;
+    color: #000 !important;
+    border-radius: 3px;
+    font-size: 15px;
+
+    display: block;
+    padding: 8px 12px;
+
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.btn-hollow 
+{
+    background-color: transparent;
+    border: 1px solid #FCE3B1aa !important;
+    color: #FCE3B1aa !important;
+
+    margin-right: 10px; 
+}
+
+.btn-disabled
+{
+    border: 1px solid #FCE3B122 !important;
+    color: #FCE3B122 !important;
+}
+
+.desc-div
+{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.desc-div label
+{
+    color: #EBCFB2 !important;
+    padding-top: 10px;
+    text-align: center;
+
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.desc-div span {
+
+    color: #5ab1bb;
+}
+
+.api-div {
+
+    display: flex;
+    padding: 0px;
+    padding-top: 50px;
+    justify-content: center;
+    flex-flow: column;
+    letter-spacing: 1px;
+}
+
+.api-div .title {
+
+    display: flex;
+    color: #dccca3 !important;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.api-board {
+
+    padding: 0px;
+}
+
+.api-div .url-div {
+
+    display: flex;
+    font-weight: bold;
+}
+
+.api-div .block {
+
+    display: inline-flex;
+
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin : 3px 1px;
+
+    font-size: 16px;
+}
+
+.api-div .method {
+
+    background: #1B98E0;
+    color: #fff;
+}
+
+.api-div .url {
+
+    background: #eaebea;
+    flex: 1;
+    margin-left: 3px;
+}
+
+.input-row {
+
+    display: flex;
+}
+
+.input-row .var-name {
+
+    display: inline-flex;
+    background-color: #555555;
+    color: #000;
+}
+
+.input-row .input-box {
+
+    display: inline-flex;
+    flex: 1;
+
+    border: 1px solid #EEEEEE1C;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.action-div {
+
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.action-div button {
+
+    display: inline-flex;
+    border: 0px;
+    margin-left: 3px !important;
+
+    font-size: inherit;
+    font-weight: bold;
+    font-family: inherit !important;
+}
+
+.btn-submit {
+    background-color: #a0e8af;
+}
+
+.btn-cancel {
+    background-color: #555555;
+}
+
+.api-out-div {
+
+    display: flex;
+    border-radius: 4px;
+    padding-top: 30px;
+}
+
+.api-out-title {
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    font-size: 7px;
+    font-weight: bolder;
+}
+
+.out-div {
+
+    display: none;
+    padding: 10px 5px;
+    background: #c7d6d5;
+    border-radius: 3px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    flex: 1;
+}

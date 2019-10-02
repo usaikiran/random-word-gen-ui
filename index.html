@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Words</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/media.css" />
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="js/index.js"></script>
+    <script src="js/api.js"></script>
+</head>
+<body>
+
+    <div class="header-div">
+        <img id="github" src="res/img/github_b.png" class="github" />
+    </div>
+    <div class="root-div">
+        
+        <div class="random-div col-sm-4">
+            <label id="random-word" class="random-word"></label>
+            <div class="btn-div">
+                <button id="btn-undo" class="btn btn-generate btn-hollow btn-disabled">Undo</button>
+                <button id="btn-redo" class="btn btn-generate btn-hollow btn-disabled">Redo</button>
+                <button id="btn-generate" class="btn btn-generate">Generate</button>
+            </div>
+        </div>
+
+        <div class="desc-div col-sm-5">
+            <label>A <span>Random Word Generator</span> which creates unique words on fly, using Markov Model</label>
+        </div>
+
+        <div class="api-div col-sm-6">
+
+            <h2 class="title col-sm-12">Try out the API</h2><br/>
+
+            <div class="api-board col-sm-12">
+                <div class="url-div col-sm-12">
+                    <div class="method block">POST</div>
+                    <div class="url block">https://random-word-gen.herokuapp.com/generate</div>
+                </div>
+                <div class="input-div col-sm-12">
+                    <div class="input-row">
+                        <div class="var-name block">wordLength</div>
+                        <input id="wordLength" class="input-box block" type="text" placeholder="lenght of word (optional)"/>
+                    </div>
+                    <div class="input-row">
+                        <div class="var-name block">beginningWith</div>
+                        <input id="beginningWith" class="input-box block" type="text" placeholder="statring chars (optional)"/>
+                    </div>
+                </div>
+
+                <div class="action-div col-sm-12">
+                    <button id="api-submit" class="btn-submit block">submit</button>
+                    <button class="btn-cancel block">cancel</button>
+                </div>
+
+                <div class="api-out-div col-sm-12">
+                    <p id="out-div" class="out-div col-sm-12"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
